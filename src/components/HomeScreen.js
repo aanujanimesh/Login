@@ -8,7 +8,7 @@ const HomeScreen = () => {
   return (
     <div>
       <br />
-      <h1>Welcome {location.state} </h1>
+      <h1>Welcome {location.state.username} </h1>
       
     </div>
   );
