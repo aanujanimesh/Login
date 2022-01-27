@@ -2,14 +2,13 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 
 const HomeScreen = () => {
-  
-  let location = useLocation();
+  // let location = useLocation();
+  const location = useLocation();
 
   return (
     <div>
       <br />
       <h1>Welcome {location.state.username} </h1>
-      
     </div>
   );
 };
