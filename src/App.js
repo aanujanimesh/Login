@@ -6,21 +6,21 @@ import Header from "./components/Header";
 import LoginScreen from "./components/LoginScreen";
 import HomeScreen from "./components/HomeScreen";
 
-const App = () => {
+function App() {
   return (
     <>
       <Header />
       <Router>
         <Container>
           <Routes>
-            <Route exact path="/" element={<LoginScreen />}></Route>
-            <Route path="/homepage" element={<HomeScreen />}></Route>
+            <Route exact path="/" element={<LoginScreen />} />
+            <Route path="/homepage" element={<HomeScreen />} />
           </Routes>
         </Container>
       </Router>
       {/* <Footer /> */}
     </>
   );
-};
+}
 
 export default App;
